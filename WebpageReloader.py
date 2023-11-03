@@ -1,7 +1,6 @@
 import pyautogui
 import time
 from selenium import webdriver
-import webbrowser
 from time import sleep
 import schedule
 import time
