@@ -5,7 +5,7 @@ from time import sleep
 import schedule
 import time
 
-link ="https://www.etsu.edu/gradschool/" 
+link ="https://trello.com/b/dFZOlE4h/detailed-requests?completedInviteSignup=1" 
 
 def RefreshWebPage(url =link, NumOfTimeToRefresh=4, RefreshRateInSeconds=7200):
     print("Refreshing.....")
@@ -20,14 +20,15 @@ def RefreshWebPage(url =link, NumOfTimeToRefresh=4, RefreshRateInSeconds=7200):
     driver.quit()
 
 
+RefreshWebPage()
 
-schedule.every().day.at("08:00").do(RefreshWebPage)    #refresh 4 times days after 2hrs(7200 seconds)
+#schedule.every().day.at("08:00").do(RefreshWebPage)    #refresh 4 times days after 2hrs(7200 seconds)
         
 
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+#while True:
+    #schedule.run_pending()
+    #time.sleep(1)
 #RefreshWebPage(url, 4, 7200)   #refresh 4 times days after 7hrs(7200 seconds)
 
 
